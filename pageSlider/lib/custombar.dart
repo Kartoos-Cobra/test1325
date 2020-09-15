@@ -8,13 +8,15 @@ class CustomProgressBar extends StatefulWidget {
 }
 
 int pagenumber = 0;
+double dx;
 
 class _CustomProgressBarState extends State<CustomProgressBar> {
   @override
   Widget build(BuildContext context) {
+    final dp = MediaQuery.of(context).size;
     return Container(
       width: 300,
-      height: 70,
+      height: dp.height / 5,
       child: CustomPaint(
         painter: BarPainter(),
       ),

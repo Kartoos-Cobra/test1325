@@ -26,6 +26,7 @@ class _PagesState extends State<Pages> {
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
+            alignment: Alignment.center,
             child: CustomProgressBar(),
           ),
           Expanded(
